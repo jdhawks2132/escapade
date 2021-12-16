@@ -13,11 +13,11 @@ const AdventureList = ({ adventures }) => {
 					<h1>{'./escapade/' + adventure.country}</h1>
 					<h3>{adventure.location}</h3>
 					<img
-						src={adventure.image}
+						src={`%PUBLIC_URL%` + adventure.image}
 						alt={adventure.location}
 						style={{ width: 200 }}
 					/>
-					``
+
 					<p>{adventure.activity}</p>
 					<div>{adventure.description.substring(0, 100)}...</div>
 					<Link style={{ background: color }} to={`/feature/${adventure.id}`}>
