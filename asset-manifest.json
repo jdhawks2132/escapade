@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/escapade/static/css/main.15a30a79.css",
-    "main.js": "/escapade/static/js/main.01a65da9.js",
+    "main.js": "/escapade/static/js/main.20676c26.js",
     "static/media/bolivia.jpg": "/escapade/static/media/bolivia.9695c8661a66f4122f2d.jpg",
     "static/media/SAMap.png": "/escapade/static/media/SAMap.58e4f0fce7a23788eda8.png",
     "index.html": "/escapade/index.html",
     "static/media/mode-icon.svg": "/escapade/static/media/mode-icon.651cf79205ce37eeacd56da0aef056a9.svg",
     "main.15a30a79.css.map": "/escapade/static/css/main.15a30a79.css.map",
-    "main.01a65da9.js.map": "/escapade/static/js/main.01a65da9.js.map"
+    "main.20676c26.js.map": "/escapade/static/js/main.20676c26.js.map"
   },
   "entrypoints": [
     "static/css/main.15a30a79.css",
-    "static/js/main.01a65da9.js"
+    "static/js/main.20676c26.js"
   ]
 }
