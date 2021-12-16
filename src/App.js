@@ -1,25 +1,63 @@
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+//components
+import Adventures from './pages/adventures/Adventures';
+import Create from './pages/create/Create';
+import Search from './pages/search/Search';
+import Feature from './pages/feature/Feature';
+import NavBar from './components/NavBar';
+import Home from './pages/home/Home';
+import SideBar from './components/SideBar';
+import { useState } from 'react';
+
+//styles
 import './App.css';
+import { useTheme } from './hooks/useTheme';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [favorites, setFavorites] = useState([]);
+
+	const handleFavorites = (newFavorite) => {
+		if (!favorites.includes(newFavorite)) {
+			const updatedFavs = [...favorites, newFavorite];
+			setFavorites(updatedFavs);
+		} else {
+			return favorites;
+		}
+	};
+
+	const handleDelete = (favorite) => {
+		const updatedFavs = favorites.filter((fav) => fav !== favorite);
+		return setFavorites(updatedFavs);
+	};
+
+	const { mode } = useTheme();
+
+	return (
+		<div className={`App ${mode}`}>
+			<BrowserRouter>
+				<NavBar />
+				<SideBar favorites={favorites} handleDelete={handleDelete} />
+				<Switch>
+					<Route path='/escapade'>
+						<Home />
+					</Route>
+					<Route path='/adventures'>
+						<Adventures />
+					</Route>
+					<Route path='/create'>
+						<Create />
+					</Route>
+					<Route path='/search'>
+						<Search />
+					</Route>
+					<Route path='/feature/:id'>
+						<Feature handleFavorites={handleFavorites} />
+					</Route>
+				</Switch>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

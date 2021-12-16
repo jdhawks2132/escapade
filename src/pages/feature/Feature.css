@@ -1,0 +1,38 @@
+.feature {
+	max-width: 1200px;
+	margin-left: 250px;
+	margin-top: 50px;
+	text-align: center;
+	background: #fff;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.feature button {
+	color: gold;
+	border: none;
+	text-decoration: none;
+	display: block;
+	background: linear-gradient(0.25turn, blue, green);
+	font-size: 0.9em;
+	width: 100px;
+	text-align: center;
+	width: 120px;
+	padding: 5px;
+	border-radius: 4px;
+	margin: 20px auto 0;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+.feature button:hover {
+	color: gold;
+	cursor: pointer;
+}
+.feature p {
+	padding: 20px;
+}
+
+.feature.dark {
+	background: #555;
+	color: #e4e4e4;
+}

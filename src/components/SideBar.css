@@ -1,0 +1,23 @@
+.side-bar {
+	float: left;
+	padding: 15px;
+	color: white;
+	width: 175px;
+	margin-bottom: -5000px;
+	padding-bottom: 5000px;
+	overflow: none;
+}
+
+.side-bar p:hover {
+	cursor: pointer;
+}
+
+#theme {
+	background-color: lightgray;
+	border-radius: 10px;
+	padding-inline-start: 10px;
+	padding-inline-end: 10px;
+	height: 40px;
+	padding: 10px;
+	width: 100px;
+}
