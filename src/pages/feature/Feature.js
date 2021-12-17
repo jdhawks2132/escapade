@@ -30,7 +30,7 @@ const Feature = ({ handleFavorites }) => {
 				<>
 					<h2 className='page-title'>{adventure.location} </h2>
 					<img
-						src={adventure.image}
+						src={'./escapade/' + adventure.image}
 						alt={adventure.location}
 						style={{ width: 800 }}
 					/>
