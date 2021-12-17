@@ -13,7 +13,7 @@ const AdventureList = ({ adventures }) => {
 					<h1>{adventure.country}</h1>
 					<h3>{adventure.location}</h3>
 					<img
-						src={'./escapade' + adventure.image}
+						src={'/escapade' + adventure.image}
 						alt={adventure.location}
 						style={{ width: 200 }}
 					/>
