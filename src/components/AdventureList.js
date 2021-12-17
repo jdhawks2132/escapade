@@ -21,7 +21,7 @@ const AdventureList = ({ adventures }) => {
 					<p>{adventure.activity}</p>
 					<div>{adventure.description.substring(0, 100)}...</div>
 					<Link style={{ background: color }} to={`/feature/${adventure.id}`}>
-						Do This
+						More Info
 					</Link>
 				</div>
 			))}
