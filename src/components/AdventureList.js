@@ -10,7 +10,7 @@ const AdventureList = ({ adventures }) => {
 		<div className={`adventure-list ${mode}`}>
 			{adventures.map((adventure) => (
 				<div key={adventure.id} className={`card ${mode}`}>
-					<h1>{adventure.country}</h1>
+					<h1>{'./escapade/' + adventure.country}</h1>
 					<h3>{adventure.location}</h3>
 					<img
 						src={adventure.image}
