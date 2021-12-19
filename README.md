@@ -1,4 +1,4 @@
-![escapade_banner](https://github.com/jdhawks2132/escapade/commit/d7fdee6a2d096f5003dc4a54c53291ffaf2cccad)
+![escapade_banner](https://github.com/jdhawks2132/escapade/blob/main/Escapade.png)
 
 # Escapade
 
